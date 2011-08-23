@@ -1,8 +1,16 @@
-= rack-session-dbm
+= rack-session-gdbm
 
-Description goes here.
+A Rack-based session store with GDBM. Take it easy to use sessions!
 
-== Contributing to rack-session-dbm
+== Introduction
+
+* install libgdbm-dev or something like that before you build ruby
+* (re)install ruby or run setup.rb on your gdbm lib dir
+* use Rack::Session::GDBM(, CUSTOMIZED_GDBM_FILE_PATH)
+
+TODO more complete manual...
+
+== Contributing to rack-session-gdbm
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
@@ -14,6 +22,6 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2011 udzura. See LICENSE.txt for
+Copyright (c) 2011 Uchio Kondo <udzura__atmark__udzura.jp>. See LICENSE.txt for
 further details.
 
