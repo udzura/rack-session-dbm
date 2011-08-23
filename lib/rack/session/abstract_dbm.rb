@@ -9,7 +9,7 @@ module Rack
         super(app, options)
 
         @mutex = Mutex.new
-        db_path = path || (ENV['RACK_ROOT'] ? ::File.join(ENV['RACK_ROOT'], 'tmp', default_session_file) : @default_options[:dbm_path])
+        db_path = path || (defined?(RACK_ROOT) ? ::File.join(RACK_ROOT, 'tmp', default_session_file) : @default_options[:dbm_path])
         opts = @default_options
 
         @pool = dbklass.new(db_path)

@@ -1,12 +1,21 @@
 = rack-session-gdbm
 
-A Rack-based session store with GDBM. Take it easy to use sessions!
+A Rack-based session store with SDBM/GDBM. Take it easy to use sessions!
 
 == Introduction
 
+* just bundle:
+
+    gem 'rack-session-dbm'
+
+* then +use Rack::Session::SDBM(, CUSTOMIZED_GDBM_FILE_PATH)+
+
+=== To use GDBM...
+
 * install libgdbm-dev or something like that before you build ruby
 * (re)install ruby or run setup.rb on your gdbm lib dir
-* use Rack::Session::GDBM(, CUSTOMIZED_GDBM_FILE_PATH)
+* bundle as above
+* +use Rack::Session::GDBM(, CUSTOMIZED_GDBM_FILE_PATH)+
 
 TODO more complete manual...
 
