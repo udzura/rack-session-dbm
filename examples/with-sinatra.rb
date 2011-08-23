@@ -22,7 +22,7 @@ end
 
 delete '/keys' do
   session.delete params[:key]
-  flash[:notice] = "deleet session[#{params[:key].inspect}]"
+  flash[:notice] = "delete session[#{params[:key].inspect}]"
   redirect "/"
 end
 
