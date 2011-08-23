@@ -17,10 +17,10 @@ Jeweler::Tasks.new do |gem|
   gem.name = "rack-session-dbm"
   gem.homepage = "http://github.com/udzura/rack-session-dbm"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A rack-based session store on sdbm/gdbm}
+  gem.description = %Q{A rack-based session store on sdbm/gdbm. you can use this gem in smaller projects.}
   gem.email = "udzura@udzura.jp"
-  gem.authors = ["udzura"]
+  gem.authors = ["Uchio Kondo"]
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
